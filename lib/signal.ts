@@ -1,4 +1,5 @@
-import type { OHLC, NewsItem } from './util';
+import type { NewsItem } from './util';
+import type { OHLC } from '@/components/types';
 import { ema, rsi, macd } from './ta';
 
 export type ComputedSignal = { direction: 'BUY'|'SELL'|'NEUTRAL'; entry: number; stop: number; takeProfit: number; confidence: number; reason: string };
